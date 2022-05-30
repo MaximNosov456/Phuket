@@ -1,0 +1,96 @@
+.phuket {
+  filter: brightness(77%);
+  background-image: url("../images/phuket-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+  text-align: center;
+  padding-top: 45px;
+  @media (max-width: 944px) {
+    background-size: cover;
+    background-position: left center;
+  }
+  &__text {
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 59px;
+    @media (max-width: 1200px) {
+      font-size: 32px;
+      line-height: 41px;
+    }
+    @media (max-width: 944px) {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    @media (max-width: 470px) {
+      font-size: 19px;
+      line-height: 27px;
+    }
+  }
+  &__subtitle {
+    margin-top: 45px;
+    font-size: 48px;
+    line-height: 59px;
+    @media (max-width: 1200px) {
+      font-size: 36px;
+      line-height: 48px;
+    }
+    @media (max-width: 944px) {
+      font-size: 26px;
+      line-height: 32px;
+    }
+    @media (max-width: 470px) {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+}
+.phuket__items {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+  @media (max-width: 1200px) {
+    flex-wrap: wrap;
+  }
+}
+
+.phuket__item {
+  text-align: center;
+  width: 200px;
+  @media (max-width: 1200px) {
+    margin-bottom: 20px;
+  }
+  &-name {
+    margin-top: 30px;
+    @media (max-width: 1200px) {
+      margin-top: 15px;
+    }
+  }
+  &-img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
+  }
+  &-img--1 {
+    background-image: url("../images/item-img1.svg");
+  }
+  &-img--2 {
+    background-image: url("../images/item-img2.svg");
+  }
+  &-img--3 {
+    background-image: url("../images/item-img3.svg");
+  }
+  &-img--4 {
+    background-image: url("../images/item-img4.svg");
+  }
+  &-img--5 {
+    background-image: url("../images/item-img6.svg");
+  }
+  &-img--6 {
+    background-image: url("../images/item-img5.svg");
+  }
+}

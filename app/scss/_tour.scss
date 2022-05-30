@@ -1,0 +1,199 @@
+.tour {
+  &__subtitle {
+    margin-top: 80px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 59px;
+    @media (max-width: 1250px) {
+      font-size: 32px;
+      line-height: 41px;
+      margin-top: 40px;
+    }
+  }
+  &__ticket {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 90px;
+    background: linear-gradient(to top left, #ff6666 0%, #ccff66 100%);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
+    padding: 85px 0 85px 0;
+    color: #0c110d;
+    @media (max-width: 769px) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: 470px) {
+      padding: 40px 0;
+      margin-top: 45px;
+    }
+  }
+  &__list-date {
+    margin-bottom: 10px;
+    opacity: 0.7;
+  }
+  &__list-title--date {
+    padding-left: 50px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 17%;
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/calendar.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  &__offer {
+    text-align: center;
+  }
+  &__offer-nights {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    @media (max-width: 885px) {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+  &__offer-price {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    @media (max-width: 1070px) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    @media (max-width: 885px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+  &__btn {
+    color: #efd66e;
+    background: linear-gradient(to top left, #ff6600 0%, #663300 100%);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 36px 80px;
+    text-align: center;
+    @media (max-width: 1070px) {
+      font-size: 25px;
+      line-height: 32px;
+      padding: 25px 55px;
+    }
+    @media (max-width: 885px) {
+      font-size: 18px;
+      line-height: 25px;
+      padding: 20px 40px;
+    }
+    @media (max-width: 470px) {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+  &__descr {
+    max-width: 223px;
+    text-align: center;
+    @media (max-width: 769px) {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    @media (max-width: 769px) {
+      flex-direction: column;
+    }
+    @media (max-width: 769px) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+    &-first {
+      margin-right: 175px;
+      @media (max-width: 769px) {
+        margin: 0;
+      }
+    }
+  }
+}
+.tour__list {
+  &-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 33px;
+    @media (max-width: 769px) {
+      font-size: 25px;
+      line-height: 32px;
+    }
+  }
+  &-item {
+    position: relative;
+    padding-left: 23px;
+    margin-bottom: 12px;
+    line-height: 34px;
+  }
+  &-item::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+.tour__subscription {
+  padding: 150px 0 200px;
+  @media (max-width: 769px) {
+    padding: 60px 0;
+  }
+  &-title {
+    text-align: center;
+    max-width: 1130px;
+    margin: 0 auto 120px;
+    @media (max-width: 769px) {
+      margin: 0 auto 50px;
+    }
+  }
+  &-form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    @media (max-width: 769px) {
+      flex-wrap: wrap;
+    }
+  }
+  &-input {
+    padding: 36px 15px 36px 75px;
+    width: 870px;
+    @media (max-width: 769px) {
+      width: 100%;
+      padding: 20px 15px 20px 20px;
+    }
+    &::placeholder {
+      font-style: italic;
+      color: #7b5e0b;
+    }
+  }
+  &-btn {
+    cursor: pointer;
+    padding: 36px 127px;
+    background: linear-gradient(to top left, #ffcc00 0%, #ff6600 100%);
+    @media (max-width: 769px) {
+      width: 100%;
+      padding: 20px 21px;
+    }
+  }
+}
